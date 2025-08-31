@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+  <group android:scaleX="0.6"
+         android:scaleY="0.6"
+         android:translateX="21.6"
+         android:translateY="21.6">
+    <!-- Icono simplificado de receta -->
+    <path android:fillColor="#FF8A4A"
+          android:pathData="M40,20L60,20C62.2,20 64,21.8 64,24L64,60C64,62.2 62.2,64 60,64L40,64C37.8,64 36,62.2 36,60L36,24C36,21.8 37.8,20 40,20Z"/>
+    <path android:fillColor="#FFFFFF"
+          android:pathData="M42,30L58,30L58,34L42,34Z"/>
+    <path android:fillColor="#FFFFFF"
+          android:pathData="M42,38L58,38L58,42L42,42Z"/>
+    <path android:fillColor="#FFFFFF"
+          android:pathData="M42,46L58,46L58,50L42,50Z"/>
+  </group>
+</vector>

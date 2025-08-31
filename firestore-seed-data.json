@@ -1,0 +1,278 @@
+{
+  "firestore_seed_data": {
+    "users": {
+      "user_example_1": {
+        "id": "user_example_1",
+        "name": "María González",
+        "email": "maria@example.com",
+        "photoUrl": "https://images.unsplash.com/photo-1494790108755-2616b612b5e5",
+        "favoriteRecipes": ["recipe_tacos", "recipe_empanadas"],
+        "createdAt": "2025-08-24T10:00:00Z",
+        "updatedAt": "2025-08-24T10:00:00Z",
+        "isActive": true,
+        "preferences": {
+          "region": "México",
+          "dietaryRestrictions": ["vegetariano"],
+          "notifications": true
+        }
+      },
+      "user_example_2": {
+        "id": "user_example_2",
+        "name": "Carlos Rodriguez",
+        "email": "carlos@example.com",
+        "photoUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+        "favoriteRecipes": ["recipe_ceviche"],
+        "createdAt": "2025-08-24T11:00:00Z",
+        "updatedAt": "2025-08-24T11:00:00Z",
+        "isActive": true,
+        "preferences": {
+          "region": "Perú",
+          "dietaryRestrictions": [],
+          "notifications": false
+        }
+      }
+    },
+    "recipes": {
+      "recipe_tacos": {
+        "title": "Tacos al Pastor Mexicanos",
+        "description": "Auténticos tacos al pastor con carne marinada en achiote y especias, servidos con piña, cebolla y cilantro en tortillas de maíz.",
+        "imageUrl": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b",
+        "authorId": "user_example_1",
+        "authorName": "María González",
+        "ingredients": [
+          "1 kg de carne de cerdo (pierna o lomo)",
+          "3 chiles guajillo desvenados",
+          "2 chiles ancho desvenados",
+          "1 chile chipotle",
+          "2 dientes de ajo",
+          "1/2 cebolla blanca",
+          "1 cucharada de achiote",
+          "1 cucharadita de comino",
+          "1 cucharadita de orégano",
+          "Sal y pimienta al gusto",
+          "Tortillas de maíz",
+          "1/2 piña en cubos",
+          "Cebolla blanca picada",
+          "Cilantro fresco",
+          "Limones"
+        ],
+        "instructions": [
+          "Remoja los chiles en agua caliente por 20 minutos hasta que se ablanden",
+          "Licua los chiles con ajo, cebolla, achiote, comino, orégano, sal y pimienta con un poco del agua de remojo",
+          "Marina la carne con esta salsa por al menos 2 horas o toda la noche",
+          "Corta la carne en tiras delgadas y cocina en una sartén o plancha a fuego medio-alto",
+          "Cuando esté casi lista, agrega los cubos de piña y cocina 2 minutos más",
+          "Calienta las tortillas en un comal o sartén",
+          "Sirve la carne en las tortillas y acompaña con cebolla, cilantro y limón"
+        ],
+        "preparationTime": 30,
+        "cookingTime": 20,
+        "servings": 6,
+        "difficulty": "Intermedio",
+        "region": "México",
+        "tags": ["tradicional", "mexicana", "street food", "carne", "especias"],
+        "categories": ["Plato Principal"],
+        "rating": 4.8,
+        "reviewsCount": 15,
+        "likedBy": ["user_example_2"],
+        "createdAt": "2025-08-20T10:00:00Z",
+        "updatedAt": "2025-08-20T10:00:00Z",
+        "isPublic": true
+      },
+      "recipe_empanadas": {
+        "title": "Empanadas Argentinas de Carne",
+        "description": "Clásicas empanadas argentinas con relleno de carne cortada a cuchillo, cebolla, huevo duro y aceitunas verdes.",
+        "imageUrl": "https://images.unsplash.com/photo-1599249300353-72845bca2006",
+        "authorId": "user_example_2",
+        "authorName": "Carlos Rodriguez",
+        "ingredients": [
+          "500g de carne de res (cuadril o paleta)",
+          "2 cebollas grandes",
+          "2 huevos duros",
+          "12 aceitunas verdes",
+          "1 cucharada de pimentón dulce",
+          "1 cucharadita de comino",
+          "Sal y pimienta al gusto",
+          "2 cucharadas de aceite",
+          "Masa para empanadas (o 3 tazas de harina, 100g manteca, 1 huevo, agua tibia, sal)"
+        ],
+        "instructions": [
+          "Corta la carne en cubos pequeños (no uses carne molida)",
+          "Pica las cebollas en brunoise (muy pequeña)",
+          "En una sartén grande, calienta el aceite y sofríe la cebolla hasta que esté transparente",
+          "Agrega la carne y cocina hasta que esté dorada",
+          "Condimenta con pimentón, comino, sal y pimienta",
+          "Deja enfriar y agrega los huevos duros picados y las aceitunas",
+          "Estira la masa y corta círculos de 12cm de diámetro",
+          "Coloca relleno en el centro, humedece los bordes y cierra en forma de media luna",
+          "Hornea a 200°C por 25-30 minutos hasta que estén doradas"
+        ],
+        "preparationTime": 45,
+        "cookingTime": 30,
+        "servings": 12,
+        "difficulty": "Intermedio",
+        "region": "Argentina",
+        "tags": ["tradicional", "argentina", "horneado", "carne", "masa"],
+        "categories": ["Aperitivo", "Plato Principal"],
+        "rating": 4.6,
+        "reviewsCount": 8,
+        "likedBy": ["user_example_1"],
+        "createdAt": "2025-08-21T15:30:00Z",
+        "updatedAt": "2025-08-21T15:30:00Z",
+        "isPublic": true
+      },
+      "recipe_ceviche": {
+        "title": "Ceviche Peruano Clásico",
+        "description": "Auténtico ceviche peruano con pescado fresco marinado en jugo de limón, ají amarillo, cebolla morada y cilantro.",
+        "imageUrl": "https://images.unsplash.com/photo-1585032226651-759b368d7246",
+        "authorId": "user_example_2",
+        "authorName": "Carlos Rodriguez",
+        "ingredients": [
+          "500g de pescado blanco fresco (lenguado, corvina o mero)",
+          "10-12 limones peruanos (o 15 limones normales)",
+          "1 cebolla morada mediana",
+          "2-3 ajíes amarillos",
+          "1 trozo de jengibre (2cm)",
+          "Cilantro fresco",
+          "Sal al gusto",
+          "1 camote cocido",
+          "Choclo desgranado",
+          "Cancha serrana (maíz tostado)",
+          "Lechuga para acompañar"
+        ],
+        "instructions": [
+          "Corta el pescado en cubos de 2cm aproximadamente",
+          "Corta la cebolla morada en juliana fina y remoja en agua con sal por 10 minutos",
+          "Licua los ajíes amarillos con un poco de jugo de limón",
+          "En un bowl, coloca el pescado y agrega sal",
+          "Exprime los limones y vierte el jugo sobre el pescado",
+          "Agrega el ají amarillo licuado y el jengibre rallado",
+          "Escurre la cebolla y agrégala al ceviche",
+          "Mezcla suavemente y deja reposar 5-10 minutos",
+          "Ajusta la sal y agrega cilantro picado",
+          "Sirve inmediatamente con camote, choclo y cancha"
+        ],
+        "preparationTime": 25,
+        "cookingTime": 0,
+        "servings": 4,
+        "difficulty": "Fácil",
+        "region": "Perú",
+        "tags": ["fresco", "marino", "sin cocción", "saludable", "peruano"],
+        "categories": ["Aperitivo", "Plato Principal"],
+        "rating": 4.9,
+        "reviewsCount": 12,
+        "likedBy": ["user_example_1"],
+        "createdAt": "2025-08-22T12:00:00Z",
+        "updatedAt": "2025-08-22T12:00:00Z",
+        "isPublic": true
+      },
+      "recipe_arepa": {
+        "title": "Arepas Venezolanas Tradicionales",
+        "description": "Arepas suaves y esponjosas hechas con harina de maíz precocida, perfectas para rellenar con cualquier ingrediente.",
+        "imageUrl": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445",
+        "authorId": "user_example_1",
+        "authorName": "María González",
+        "ingredients": [
+          "2 tazas de harina de maíz precocida (Harina P.A.N.)",
+          "2 1/2 tazas de agua tibia",
+          "1 cucharadita de sal",
+          "1 cucharada de aceite (opcional)"
+        ],
+        "instructions": [
+          "En un bowl grande, disuelve la sal en el agua tibia",
+          "Agrega gradualmente la harina de maíz mientras revuelves",
+          "Mezcla hasta formar una masa suave y sin grumos",
+          "Deja reposar la masa por 5 minutos",
+          "Forma bolitas del tamaño de una pelota de tenis",
+          "Aplana las bolitas hasta formar discos de 1cm de grosor",
+          "Cocina en una plancha o sartén caliente por 7-8 minutos de cada lado",
+          "Opcional: termina la cocción en horno a 180°C por 10 minutos",
+          "Abre con cuidado por la mitad y rellena al gusto"
+        ],
+        "preparationTime": 15,
+        "cookingTime": 20,
+        "servings": 8,
+        "difficulty": "Fácil",
+        "region": "Venezuela",
+        "tags": ["básico", "venezolana", "maíz", "versátil", "sin gluten"],
+        "categories": ["Desayuno", "Acompañamiento"],
+        "rating": 4.4,
+        "reviewsCount": 6,
+        "likedBy": [],
+        "createdAt": "2025-08-23T09:00:00Z",
+        "updatedAt": "2025-08-23T09:00:00Z",
+        "isPublic": true
+      }
+    },
+    "reviews": {
+      "review_1": {
+        "recipeId": "recipe_tacos",
+        "userId": "user_example_2",
+        "userName": "Carlos Rodriguez",
+        "userPhotoUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+        "rating": 5,
+        "comment": "¡Increíbles! La marinada le da un sabor auténtico. Los hice para una fiesta y todos quedaron encantados.",
+        "createdAt": "2025-08-21T18:30:00Z",
+        "updatedAt": "2025-08-21T18:30:00Z",
+        "isVisible": true
+      },
+      "review_2": {
+        "recipeId": "recipe_empanadas",
+        "userId": "user_example_1",
+        "userName": "María González",
+        "rating": 4,
+        "comment": "Muy buena receta, aunque me costó un poco cerrar las empanadas. El relleno está delicioso.",
+        "createdAt": "2025-08-22T20:15:00Z",
+        "updatedAt": "2025-08-22T20:15:00Z",
+        "isVisible": true
+      },
+      "review_3": {
+        "recipeId": "recipe_ceviche",
+        "userId": "user_example_1",
+        "userName": "María González",
+        "rating": 5,
+        "comment": "Perfecto para el verano. El pescado queda en su punto exacto y el sabor es espectacular.",
+        "createdAt": "2025-08-23T14:45:00Z",
+        "updatedAt": "2025-08-23T14:45:00Z",
+        "isVisible": true
+      }
+    },
+    "categories": {
+      "desayuno": {
+        "name": "Desayuno",
+        "description": "Recetas perfectas para comenzar el día",
+        "imageUrl": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666",
+        "recipeCount": 12,
+        "isActive": true
+      },
+      "almuerzo": {
+        "name": "Almuerzo",
+        "description": "Platos principales para la comida del mediodía",
+        "imageUrl": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b",
+        "recipeCount": 25,
+        "isActive": true
+      },
+      "cena": {
+        "name": "Cena",
+        "description": "Recetas para una cena deliciosa",
+        "imageUrl": "https://images.unsplash.com/photo-1574484284002-952d92456975",
+        "recipeCount": 18,
+        "isActive": true
+      },
+      "postre": {
+        "name": "Postre",
+        "description": "Dulces tentaciones latinoamericanas",
+        "imageUrl": "https://images.unsplash.com/photo-1551024506-0bccd828d307",
+        "recipeCount": 15,
+        "isActive": true
+      },
+      "aperitivo": {
+        "name": "Aperitivo",
+        "description": "Bocadillos y entradas para compartir",
+        "imageUrl": "https://images.unsplash.com/photo-1599249300353-72845bca2006",
+        "recipeCount": 20,
+        "isActive": true
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+# Reglas de Firebase Storage para App de Recetas
+# Copiar y pegar estas reglas en la consola de Firebase Storage
+
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Permitir lectura pública de todas las imágenes
+    match /{allPaths=**} {
+      allow read: if true;
+    }
+    
+    // Permitir subida de imágenes solo a usuarios autenticados
+    match /recipes/{imageId} {
+      allow write: if request.auth != null
+                   && request.resource.size < 5 * 1024 * 1024  // Máximo 5MB
+                   && request.resource.contentType.matches('image/.*');
+    }
+    
+    // Permitir subida de avatares de perfil
+    match /profiles/{userId}/{imageId} {
+      allow write: if request.auth != null 
+                   && request.auth.uid == userId
+                   && request.resource.size < 2 * 1024 * 1024  // Máximo 2MB
+                   && request.resource.contentType.matches('image/.*');
+    }
+  }
+}
+
+# INSTRUCCIONES:
+# 1. Ve a la consola de Firebase: https://console.firebase.google.com/
+# 2. Selecciona tu proyecto
+# 3. Ve a Storage > Rules
+# 4. Copia y pega las reglas de arriba
+# 5. Haz clic en "Publicar"
+
+# Estas reglas permiten:
+# - Lectura pública de todas las imágenes (para mostrarlas en la app)
+# - Subida de imágenes de recetas solo por usuarios autenticados (máx 5MB)
+# - Subida de avatares solo por el propio usuario (máx 2MB)
+# - Solo archivos de imagen válidos
